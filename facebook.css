@@ -1,0 +1,747 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--semi-dark);
+}
+
+:root{
+    --primary:#4267B2;
+    --semi-dark:#898F9C;
+    --dark:#000000;
+    --danger:#e4000f;
+    --success:#56953e;
+    --warning:#ffff00;
+    --text:#e2e4e3;
+    --background:#ffff;
+}
+
+.nav{
+    height: 70px;
+    background-color: var(--background);
+    display: flex;
+}
+
+/* left part */
+.left{
+    width: 25%;
+    display: flex;
+}
+
+.left-part{
+    display: flex;
+}
+
+.flogo{
+    margin: auto;
+}
+
+.flogo img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 16px 10px;
+}
+
+.ftext{
+    height: 38px;
+    width: 210px;
+    background-color: var(--text);
+    display: flex;
+    position: relative;
+    margin: auto;
+    border-radius: 30px
+}
+
+.ftlogo{
+    margin: auto;
+}
+
+.ftlogo img{
+    height: 23px;
+    width: 35px;
+    position: absolute;
+    top: 8px;
+    left: 5px;
+}
+
+.fsearch{
+    margin: auto;
+}
+
+.fsearch input{
+    border: none;
+    position: absolute;
+    top: 11px;
+    left: 40px;
+    font-size: 14px;
+    margin-left: 4px;
+    background-color: var(--text);
+}
+
+.fsearch input{
+    border: none;
+}
+
+.fsearch input:focus{
+    outline: none;
+}
+/* end left part */
+
+
+/* center part */
+.center{
+    width: 50%;
+}
+
+.cicon-control{
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cicon{
+    width: 100px;
+    height: 70px;
+    text-align: center;
+    position: relative;
+}
+
+.cicon-border{
+    width: 100px;
+    height: 70px;
+    text-align: center;
+    position: relative;
+    border-bottom: 5px solid var(--primary);
+}
+
+.cicon-border img{
+    width: 28px;
+    height: 40px;
+    position: absolute;
+    top: 18px;
+    left: 33px;
+}
+.cicon:hover{
+    background-color: var(--text);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cicon img{
+    width: 28px;
+    height: 40px;
+    position: absolute;
+    top: 18px;
+    left: 33px;
+}
+
+section.ctext {
+    background: red;
+    height: 26px;
+    width: 21px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    left: 50px;
+}
+/* end center part */
+
+/* right part */
+.right{
+    width: 25%;
+    display: flex;
+}
+
+.profile{
+    display: flex;
+    height: 70px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.profile p{
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.ricon{
+    display: flex;
+    height: 70px;
+    width: 160px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ricons{
+    background: var(--text);
+    height: 38px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.ricons img{
+    position: relative;
+    top: 7px;
+    width: 23px;
+    height: 23px;
+    left: 4px;
+}
+
+/* end right part */
+
+/* start body part */
+.body{
+    height: 100vh;
+    display: flex;
+}
+
+.bleft{ 
+    width: 25%;
+    overflow: scroll;
+}
+
+.bcenter{
+    width: 50%;
+}
+
+
+/* myday part */
+.myday-control{
+    width: 655px;
+    overflow: hidden;
+    display: flex;
+}
+
+.myday-control img{
+    height: 50px;
+    width: 50px;
+    border: 3px solid var(--primary);
+    border-radius: 50%;
+    position: absolute;
+    top: 6px;
+    left: 10px;
+}
+
+.background{
+    background-image: url(img/k5.jpg);
+    height: 200px;
+    width: 100px;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 12px 8px;
+    position: relative;
+}
+
+.background1{
+    background-image: url(img/e1.jpg);
+    height: 200px;
+    width: 100px;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 12px 8px;
+    position: relative;
+}
+
+.background2{
+    background-image: url(img/r2.jpg);
+    height: 200px;
+    width: 100px;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 12px 8px;
+    position: relative;
+}
+
+.background3{
+    background-image: url(img/b2.jpg);
+    height: 200px;
+    width: 100px;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 12px 8px;
+    position: relative;
+}
+
+.background4{
+    background-image: url(img/p2.jpg);
+    height: 200px;
+    width: 100px;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 12px 8px;
+    position: relative;
+}
+
+.myday-control .arrow img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    border: none;
+    background: var(--semi-dark);
+    top: 165px;
+    left: 980px;
+}
+
+.post-myday{
+    background-image: url(img/p.jpeg);
+    height: 200px;
+    width: 100px;
+    border-radius: 10px;
+    position: relative;
+    margin: 12px 8px;
+    background-size: cover;
+}
+
+.post{
+    width: 93px;
+    height: 60px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.post-myday img{
+    width: 38px;
+    height: 45px;
+    border-radius: 50%;
+    position: absolute;
+    top: 121px;
+    left: 29px;
+    background: var(--primary);
+    border: 4px solid #fff;
+}
+
+.post-myday p{
+    position: absolute;
+    bottom: 10px;
+    left: 4px;
+    font-weight: 200;
+}
+
+
+/* start post */
+.bpost{
+    width: 674px;
+    height: 125px;
+    border-radius: 10px;
+    background-color: var(--background);
+}
+
+.post-up{
+    display: flex;
+}
+
+.post-up img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 14px 12px;
+}
+
+.btxt{
+    width: 570px;
+    background: var(--text);
+    height: 62px;
+    border-radius: 30px;
+    margin: 4px;
+    position: relative;
+    margin: 8px 0;
+}
+
+.btxt p{
+    font-size: large;
+    font-weight: bold;
+    position: absolute;
+    top: 19px;
+    left: 11px;
+}
+
+hr{
+    width: 656px;
+    margin: 4px 8px;
+}
+
+.post-down{
+    display: flex;
+}
+
+.bdown-icon{
+    justify-content: center;
+    display: flex;
+    width: 220px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bdown-icon img{
+    width: 40px;
+    height: 28px;
+}
+
+.bdown-icon p{
+    margin: 0 12px;
+    font-weight: 200;
+}
+
+
+/* start newfeed post */
+.bnewfeed{
+    width: 674px;
+    background: var(--background);
+    height: 660px;
+    margin: 10px 0;
+}
+
+.bname{
+    display: flex;
+    height: 68px;
+}
+
+.bone{
+    display: flex;
+    margin: 7px;
+}
+
+.bone img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid var(--primary);
+}
+
+.bworld img{
+    width: 12px;
+    position: relative;
+    top: 30px;
+    left: -103px;
+}
+
+.bone p{
+    margin: 6px 8px;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.btwo{
+    position: relative;
+    top: 5px;
+    left: 390px;
+}
+
+.btwo img{
+    margin-left: 5px;
+    width: 20px;
+}
+
+.bcaption{
+   margin: 0 14px;
+}
+
+.bcaption p{
+    font-weight: bolder;
+}
+
+.bphoto{
+    background: red;
+    margin: 10px 0;
+    height: 450px;
+    display: flex;
+    position: relative;
+}
+
+.p1{
+    background: gray;
+    height: 450px;
+    width: 337px;
+}
+
+.p1 img{
+    height: 450px;
+    width: 337px;
+}
+
+.p2 img{
+    width: 337px;
+    height: 225px;
+}
+
+.p3 img{
+    width: 338px;
+    height: 227px;
+    position: absolute;
+    top: 224px;
+    left: 336px;
+}
+
+.breact{
+    display: flex;
+    background: var(--background);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bfirst {
+    display: flex;
+    justify-content: center;
+    height: 41px;
+    align-items: center;
+    margin: 0 -102px;
+}
+
+.bfirst img{
+    width: 20px;
+    height: 21px;
+    margin: 0 -4px;
+}
+
+.bfirst p{
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.blast p{
+    font-weight: bold;
+}
+
+.bemoji{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lemoji{
+    display: flex;
+    height: 40px;
+    width: 60px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.lemoji img{
+    width: 24px;
+    height: 20px;
+}
+
+.lemoji p{
+    margin: 0 4px;
+    font-weight: bold;
+}
+/* end newfeed post */
+
+.licon{
+    background: var(--semi-dark);
+    display: flex;
+    height: 100px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ldicon{
+    background: var(--semi-dark);
+    display: flex;
+    height: 100px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.licon img{
+    width: 30px;
+    height: 30px;
+    margin: 0 16px;
+}
+
+.ldicon img{
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    margin: 0 14px;
+}
+
+.licon p{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+.ldicon p{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.lcontrol{
+    margin: 12px;
+}
+
+.ldown-control{
+    margin: 12px;
+}
+
+.ltxt{
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ltxt p{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.lseemore{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.lseemore img{
+    width: 20px;
+    height: 20px;
+    margin: 0 20px;
+}
+
+.lseemore p{
+    font-weight: bold;
+    margin: 0 -14px;
+}
+
+.bright{
+    width: 25%;
+    overflow-y: scroll;
+}
+
+.rcontrol{
+    height: 980px;
+    margin: 12px 0;
+}
+
+.rtxt{
+    background: var(--semi-dark);
+    height: 34px;
+    margin-bottom: 10px;
+}
+
+.rtxt p{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.rdesign-control{
+    margin-bottom: 10px;
+}
+
+.rdesign{
+    margin: 20px 0;
+    display: flex;
+}
+
+.rdesign img{
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+.rdesign p{
+    margin: auto;
+    font-weight: bold;
+}
+
+.rbirthday{
+    background: var(--semi-dark);
+    height: 100px;
+}
+
+.rbtxt{
+    height: 40px;
+}
+
+.rbtxt p{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.rbicon{
+    height: 68px;
+    display: flex;
+}
+
+.rbicon img{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.rbicon p{
+    font-weight: bold;
+}
+
+.rcontact{
+
+}
+
+.rctxt{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rctxt p{
+    margin: 12px;
+    font-weight: bold;
+}
+
+.rctxt img{
+    height: 20px;
+    width: 20px;
+    margin: 12px;
+}
+
+.rcimg{
+    height: 45px;
+    display: flex;
+}
+
+.rcimg img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 3px solid var(--primary);
+    margin: 4px;
+}
+
+.rcimg p{
+    font-weight: bold;
+    margin: 13px 5px;
+}
+
+.active{
+    background: green;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: relative;
+    top: 32px;
+    left: -98px;
+}
